@@ -1,0 +1,20 @@
+.red-bar {
+    background-color: #B30000; /* 짙은 빨간색 배경색을 설정합니다 */
+    color: #fff; /* 텍스트 색상을 흰색으로 설정합니다 */
+    padding: 10px; /* 위아래 패딩을 추가합니다 */
+}
+
+.red-bar ul {
+    list-style: none; /* 목록 마커를 제거합니다 */
+    padding: 0;
+}
+
+.red-bar ul li {
+    display: inline; /* 메뉴 항목을 가로로 배치합니다 */
+    margin-right: 10px; /* 메뉴 항목 사이의 간격을 조정합니다 */
+}
+
+.red-bar a {
+    text-decoration: none; /* 링크 밑줄을 제거합니다 */
+    color: #fff; /* 링크 텍스트 색상을 흰색으로 설정합니다 */
+}
