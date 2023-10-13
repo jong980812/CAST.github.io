@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta name="author" content="ylzou">
+  <title>Learning Representational Invariances for Data-Efficient Action Recognition</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+
+  <meta property="og:image" content="images/teaser_5.png" />
+</head>
+<body>
+  
+  <div class="navbar-fixed">
+
+    <nav class="grey darken-4" role="navigation">
+      <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"></a>
+        <ul class="left hide-on-med-and-down">
+          <li><a class="nav-item waves-effect waves-light" href="#home">Home</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#abstract">Abstract</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#results">Results</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#paper">Paper</a></li>
+          <li><a class="nav-item waves-effect waves-light" href="#download">Download</a></li>
+          <!-- <li><a class="nav-item waves-effect waves-light" href="#network">Network</a></li> -->
+          <!-- <li><a class="nav-item waves-effect waves-light" href="#reference">References</a></li> -->
+        </ul>
+
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+  
+
+
+
+
+<!-- Author -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container scrollspy" id="home">
+
+      <h4 class="header center black-text">Learning Representational Invariances for<br> Data-Efficient Action Recognition</h4>
+
+      <br>
+
+      <div class="row center">
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="http://yuliang.vision/" target="blank">Yuliang Zou</a></div>
+          <div class="school"><a href="http://www.vt.edu/" target="blank">Virginia Tech</a></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://sites.google.com/site/jchoivision/" target="blank">Jinwoo Choi*</a></div>
+          <div class="school"><a href="https://www.khu.ac.kr/eng/main/index.do" target="blank">Kyung Hee University</a></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://scholar.google.com/citations?user=pZ0uHngAAAAJ&hl=en" target="blank">Qitong Wang</a></div>
+          <div class="school"><a href="http://www.vt.edu/" target="blank">University of Delaware</a></div>
+        </h5>
+
+        <h5 class="header col m3 s12">
+          <div class="author"><a href="https://jbhuang0604.github.io/" target="blank">Jia-Bin Huang</a></div>
+          <div class="school"><a href="http://www.vt.edu/" target="blank">University of Maryland, College Park</a></div>
+        </h5>
+
+      </div>
+
+        <h6 class="row center">
+          <div>* Corresponding author</div>
+        </h6>
+
+<!--         <h6 class="row center">
+          <div>In arxiv, 2021</div>
+        </h6> -->
+
+<!--         <h5 class="row center">
+          <img class="responsive-img" style="width:50%" src="images/teaser_v5.png">
+        </h5> -->
+      <div class="row center">
+        <div class="col m6 s12 center">
+          <video class="responsive-video" autoplay loop controls>
+            <source src="https://filebox.ece.vt.edu/~ylzou/video_data_aug/Photometric.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="col m6 s12 center">
+          <video class="responsive-video" autoplay loop controls>
+            <source src="https://filebox.ece.vt.edu/~ylzou/video_data_aug/Geometric.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="col m6 s12 center">Photometric</div>
+        <div class="col m6 s12 center">Geometric</div>
+
+        <div class="col m6 s12 center">
+          <video class="responsive-video" autoplay loop controls>
+            <source src="https://filebox.ece.vt.edu/~ylzou/video_data_aug/Temporal.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="col m6 s12 center">
+          <video class="responsive-video" autoplay loop controls>
+            <source src="https://filebox.ece.vt.edu/~ylzou/video_data_aug/Scene.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="col m6 s12 center">Temporal</div>
+        <div class="col m6 s12 center">Scene</div>
+
+      </div>
+
+        <h6 class="row">
+          <div><b>Representational invariances for video action recognition.</b> Humans recognize actions in videos effortlessly, even in the presence of large photometric, geometric, temporal, and scene variations. Injecting these task-specific video invariances through data augmentations could improve data efficiency. For each video, we show two example videos of the same action, i.e., "Tennis swing", "Basketball", "Front Crawl", and "Fencing".</div>
+        </h6>
+
+
+    </div>
+  </div>
+
+
+  <div class="container">
+
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row center">
+
+      </div>
+
+    </div>
+
+    <br>
+
+
+
+
+    <div class="row section scrollspy" id="abstract">
+      <div class="title">Abstract</div>
+Data augmentation is a ubiquitous technique for improving image classification when labeled data is scarce.
+Constraining the model predictions to be invariant to diverse data augmentations effectively injects the desired representational invariances to the model (e.g., invariance to photometric variations) and helps improve accuracy.
+Compared to image data, the appearance variations in videos are far more complex due to the additional temporal dimension.
+Yet, data augmentation methods for videos remain under-explored.
+This paper investigates various data augmentation strategies that capture different video invariances, including photometric, geometric, temporal, and actor/scene augmentations.
+When integrated with existing semi-supervised learning frameworks, we show that our data augmentation strategy leads to promising performance on the Kinetics-100/400, Mini-Something-v2, UCF-101, and HMDB-51 datasets in the low-label regime.
+We also validate our data augmentation strategy in the fully supervised setting and demonstrate improved performance.
+    </div>
+
+    <br>
+
+<!-- Results -->
+    <div class="row section scrollspy" id="results">
+      <div class="title">Results</div>
+      <br>
+
+
+    <div class="row center">
+      <div class="col s8 offset-s2">
+        <div id='results-semi'>
+          <div class="center-align subtitle">Semi-Supervised Learning (FixMatch with 3D ResNet-18)</div>
+            <img class="responsive-img" src="images/semi.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="col s8 offset-s2">
+        <div id='results-semi'>
+          <div class="center-align subtitle">Semi-Supervised Learning on Mini-Something-v2 (TCL with TSM ResNet-18)</div>
+            <img class="responsive-img" src="images/mini.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="col s8 offset-s2">
+        <div id='results-semi'>
+          <div class="center-align subtitle">Semi-Supervised Learning on Kinetics-400 (TCL with TSM ResNet-18)</div>
+            <img class="responsive-img" src="images/k400.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="col s8 offset-s2">
+        <div id='results-sup'>
+          <div class="center-align subtitle">Supervised Learning (FixMatch with R(2+1)D ResNet-34)</div>
+            <img class="responsive-img" style="width:50%"  src="images/sup.png">
+        </div>
+      </div>
+    </div>
+
+    <div class="row center">
+      <div class="col s8 offset-s2">
+        <div id='results-cross-semi'>
+          <div class="center-align subtitle">Cross-Dataset Semi-Supervised Learning (FixMatch with R(2+1)D ResNet-34)</div>
+            <img class="responsive-img" src="images/cross_semi.png">
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+<!-- Papers -->
+    <div class="row section scrollspy" id="paper">
+      <div class="title">Papers</div>
+      <br>
+
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div id='paper-thumbnail'>
+          <a href="https://arxiv.org/abs/2103.16565" target="_blank">
+            <img class="responsive-img" src="images/thumbnail_cviu.png">
+          </a>
+          <a href="https://arxiv.org/abs/2103.16565" target="_blank">
+          <div class="center-align subtitle">arXiv</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div id='paper-thumbnail' class="center-align">
+          <a href="https://filebox.ece.vt.edu/~ylzou/video_data_aug/supp2.pdf" target="_blank">
+            <img class="responsive-img" src="images/supp_cviu.png">
+          </a>
+        </div>
+        <a href="https://filebox.ece.vt.edu/~ylzou/video_data_aug/supp2.pdf" target="_blank">
+        <div class="center-align subtitle">Supplementary Material</div>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+
+    <div class="row">
+      <!-- <div class="subtitle">Citation</div> -->
+      <br>
+
+      <div class="subtitle">Bibtex</div>
+      <pre>
+@article{zou2021learning,
+  title={Learning Representational Invariances for Data-Efficient Action Recognition},
+  author={Zou, Yuliang and Choi, Jinwoo and Wang, Qitong and Huang, Jia-Bin},
+  journal={arXiv preprint arXiv:2103.16565},
+  year={2021}
+}
+</pre>
+
+
+
+
+    </div>
+    <!-- Download -->
+    <!-- TODO: Fix url -->
+    <div class="section row scrollspy" id="download">
+      <div class="title">Download</div>
+      <div class="row">
+
+        <div class="center">
+          <a href="https://github.com/vt-vl-lab/video-data-aug" target="_blank">
+            <img src="images/github.png">
+          </a>
+          <br>
+          <a href="https://github.com/vt-vl-lab/video-data-aug" target="_blank">Code</a>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+
+
+
+  </div>
+
+  <footer class="page-footer grey lighten-3">
+        
+    <div class="footer-copyright center black-text">
+      We thank <a href="http://graduatestudents.ucmerced.edu/wlai24/">Jason Lai</a> for providing this wonderful website template.
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
