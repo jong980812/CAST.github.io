@@ -1,5 +1,5 @@
 .red-bar {
-    background-color: #B30000; /* 짙은 빨간색 배경색을 설정합니다 */
+    background-color: #800000; /* 짙은 빨간색 배경색을 설정합니다 */
     color: #fff; /* 텍스트 색상을 흰색으로 설정합니다 */
     padding: 10px; /* 위아래 패딩을 추가합니다 */
 }
@@ -17,4 +17,11 @@
 .red-bar a {
     text-decoration: none; /* 링크 밑줄을 제거합니다 */
     color: #fff; /* 링크 텍스트 색상을 흰색으로 설정합니다 */
+}
+.red-bar ul li {
+    display: inline;
+    font-size: 20px;
+    margin-right: 6px;
+    background-color: #490a0a; /* 밝은 회색 배경색 추가 */
+    padding: 10px 20px; /* 여백 추가 */
 }
