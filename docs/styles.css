@@ -256,8 +256,8 @@ h1 {
 
 
 #abstract, #introduction, #method, #results, #references {
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 300px;
+    padding-right: 300px;
 }
 .red-text {
     color: red;
