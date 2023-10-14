@@ -131,8 +131,14 @@
     text-align: center;
 }
 #abstract {
-    background-color:#ffffff;
     margin-top: 10px;
     padding: 20px;
     font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+#method {
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 25px;
+    font-family:Arial, Helvetica, sans-serif;
 }
