@@ -26,10 +26,10 @@ h1 {
     display: inline;
     font-family: 'Open Sans', sans-serif;
 
-    font-size: 30px;
+    font-size: 20px;
     margin-right: 20px;
     background-color: #490a0a;
-    padding: 20px 30px;
+    padding: 15px 20px;
     text-align: center;
     /* 텍스트 가운데 정렬 추가 */
 }
@@ -56,7 +56,7 @@ h1 {
 /* 논문 제목 스타일 */
 /* 논문 제목 스타일 예제 */
 #paper h2 {
-    font-size: 50px;
+    font-size: 60px;
     /* 글자 크기 설정 */
     color: #000;
     /* 글자 색상 설정 */
@@ -82,7 +82,7 @@ h1 {
 .authors {
     font-family: 'Open Sans', sans-serif;
     /* 폰트 설정 */
-    font-size: 16px;
+    font-size: 20px;
     /* 글자 크기 설정 */
     margin: 0;
     /* 기본 마진 제거 */
@@ -128,7 +128,7 @@ h1 {
 .author_information p {
     font-family: 'Open Sans', sans-serif;
     /* 폰트 설정 */
-    font-size: 25px;
+    font-size: 33px;
     /* 글자 크기 설정 */
     color: #000000;
     /* 글자 색상 설정 */
@@ -252,6 +252,12 @@ h1 {
 #results figure img {
     border: 4px solid #1d8d28;
     /* Add a blue border around the images */
+}
+
+
+#abstract, #introduction, #method, #results, #references {
+    padding-left: 200px;
+    padding-right: 200px;
 }
 .red-text {
     color: red;
