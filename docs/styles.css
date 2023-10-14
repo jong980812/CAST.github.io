@@ -42,7 +42,7 @@
 /* 논문 제목 스타일 */
 /* 논문 제목 스타일 예제 */
 #paper h2 {
-    font-size: 34px; /* 글자 크기 설정 */
+    font-size: 50px; /* 글자 크기 설정 */
     color: #000; /* 글자 색상 설정 */
     text-align: center; /* 가운데 정렬 */
     /* 다른 스타일 속성 추가 가능 */
@@ -98,7 +98,7 @@
 
 /* 각 저자 이름 사이에 수표 스타일 */
 .authors a sup {
-    font-size: 14px; /* 글자 크기 설정 */
+    font-size: 20px; /* 글자 크기 설정 */
     color: #fc0000; /* 빨간색으로 설정 */
 }
 /* 이름에 호버 효과 스타일 */
@@ -121,12 +121,18 @@
 
 
 /* * 스타일 */
-.corresponding_author sup {
+#corresponding sup {
     color: #fc0000; /* 상위 첨자(* 텍스트) 색상을 빨간색으로 설정 */
-    font-size: 30px; /* 상위 첨자(* 텍스트)의 글자 크기 설정 */
+    font-size: 10px; /* 상위 첨자(* 텍스트)의 글자 크기 설정 */
 }
-.corresponding_author {
+#corresponding {
     color: #000000; /* "Corresponding author" 글자 색상을 빨간색으로 설정 */
-    font-size: 30px; /* 글자 크기 설정 */
+    font-size: 15px; /* 글자 크기 설정 */
     text-align: center;
+}
+#abstract {
+    background-color:#ffffff;
+    margin-top: 10px;
+    padding: 20px;
+    font-size: 25px;
 }
