@@ -14,6 +14,7 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#method">Method</a></li>
                 <li><a href="#result">Result</a></li>
                 <li><a href="#demo">Demo</a></li>
@@ -42,51 +43,81 @@
         <p class="authors">
             <a href="https://www.khu.ac.kr/eng/main/index.do">Kyung Hee University<sup></sup></a>
         </p>
-        
+
         <section id="corresponding">
             <sup>*</sup>Corresponding author
             <!-- 논문 내용을 이어서 작성합니다 -->
         </section>
     </div>
-        <!-- Abstract 문단 추가 -->
-        <section id="abstract">
-            <h1>Abstract</h1>
-            <p>Recognizing human actions in videos requires spatial and temporal understanding.
-                Most existing action recognition models lack a balanced spatio-temporal understanding of videos.
+    <!-- Abstract 문단 추가 -->
+    <section id="abstract">
+        <h1>Abstract</h1>
+        <p>Recognizing human actions in videos requires spatial and temporal understanding.
+            Most existing action recognition models lack a balanced spatio-temporal understanding of videos.
 
-                In this work, we propose a novel two-stream architecture, called Cross-Attention in Space and Time
-                (CAST), that achieves a balanced spatio-temporal understanding of videos using only RGB input.
+            In this work, we propose a novel two-stream architecture, called Cross-Attention in Space and Time
+            (CAST), that achieves a balanced spatio-temporal understanding of videos using only RGB input.
 
-                Our proposed bottleneck cross-attention mechanism enables the spatial and temporal expert models to
-                exchange information and make synergistic predictions, leading to improved performance.
+            Our proposed bottleneck cross-attention mechanism enables the spatial and temporal expert models to
+            exchange information and make synergistic predictions, leading to improved performance.
 
-                We validate the proposed method with extensive experiments on public benchmarks with different
-                characteristics: EPIC-KITCHENS-100, Something-Something-V2, and Kinetics-400.
+            We validate the proposed method with extensive experiments on public benchmarks with different
+            characteristics: EPIC-KITCHENS-100, Something-Something-V2, and Kinetics-400.
 
-                Our method consistently shows favorable performance across these datasets, while the performance of
-                existing methods fluctuates depending on the dataset characteristics.
-            </p>
-        </section>
+            Our method consistently shows favorable performance across these datasets, while the performance of
+            existing methods fluctuates depending on the dataset characteristics.
+        </p>
+    </section>
 
-        <section id="method">
-            <h2>Method</h2>
-        
-            <!-- 첫 번째 그림 및 내용 -->
-            <h3>그림 1</h3>
-            <p>첫 번째 그림에 대한 설명입니다. 이 섹션에서는 무엇을 보여주고 있는지에 대한 내용을 기술합니다.</p>
-        
-            <!-- 그림 추가: 이미지 파일 경로를 src에 설정 -->
-            <img src="/data/jong980812/project/CAST_page/figure/motivation.jpg" alt="그림 1">
-        
-            <!-- 두 번째 그림 및 내용 -->
-            <h3>그림 2</h3>
-            <p>두 번째 그림에 대한 설명입니다. 이 섹션에서는 무엇을 보여주고 있는지에 대한 내용을 기술합니다.</p>
-        
-            <!-- 그림 추가: 이미지 파일 경로를 src에 설정 -->
-            <img src="path-to-image2.jpg" alt="그림 2">
-        
-        </section>
-        
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+
+        <!-- 첫 번째 그림 및 내용 -->
+        <!-- 그림 추가: 이미지 파일 경로를 src에 설정 -->
+        <figure>
+            <img src="figure/introduction.jpg" alt="introduction_figure" class="introduction">
+            <figcaption><strong>The importance of spatio-temporal understanding.</strong></figcaption>
+        </figure>
+        <p>To accurately recognize human actions in videos, a model must understand both the spatial and temporal
+            contexts. A model that lacks fine-grained spatial understanding is likely to fail in predicting the correct
+            action.
+            a model that understands temporal context such as hand motion across frames but not the fine-grained spatial
+            context may confuse whether an object in the hand a <em>ketchup</em>, or a <em>cheese</em>, or a <em>Milk
+                carton</em>
+            Consequently, the model fails to predict the correct action, <em>Put down a cheese</em>. Similarly, a
+            model that lacks temporal context understanding may also fail to predict the correct action.
+            Let us suppose a model understands spatial context but does not understand temporal
+            context, <em>e.g.</em>,the model is confused about whether the hand is moving from outside the fridge to the
+            inside or
+            vice versa. Then the model fails to predict the correct action of <em>Take out a sauce</em>. Therefore, for
+            accurate action recognition, models need to comprehend both the spatial and temporal contexts of videos.
+        </p>
+        <figure>
+            <img src="figure/motivation.jpg" alt="motivation_figure" class="motivation">
+            <figcaption><strong>High-level illustration of the proposed method.</strong></figcaption>
+        </figure>
+
+        <p>we show a high-level illustration of the proposed method. Our architecture employs two expert models - a
+            <span class="red-text">spatial</span> expert model and a <span class="blue-text">temporal </span>expert model - which exchange information to make a synergistic
+            collective prediction.
+            Initially, the experts may predict incorrect actions due to the lack of information. For example, the
+            temporal expert may predict reach out to something while the ground truth is Pick up a fork. Similarly,
+            the spatial expert may predict utensil holder instead of fork in the shallower layers. However, after
+            using cross-attention to exchange information multiple times, the proposed method can collectively
+            predict the correct action Pick up a fork. Best viewed with zoom and color</p>
+
+    </section>
+    <section id="method">
+        <h2>Method</h2>
+
+        <!-- 첫 번째 그림 및 내용 -->
+        <p>첫 번째 그림에 대한 설명입니다. 이 섹션에서는 무엇을 보여주고 있는지에 대한 내용을 기술합니다.</p>
+        <!-- 그림 추가: 이미지 파일 경로를 src에 설정 -->
+        <img src="figure/model.jpg" alt="model_figure" class="model">
+
+    </section>
+
 
 </body>
 
