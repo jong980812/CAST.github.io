@@ -16,10 +16,10 @@
     display: inline;
     font-family: 'Open Sans', sans-serif;
 
-    font-size: 20px;
-    margin-right: 18px;
+    font-size: 30px;
+    margin-right: 20px;
     background-color: #490a0a;
-    padding: 10px 20px;
+    padding: 20px 30px;
     text-align: center; /* 텍스트 가운데 정렬 추가 */
 }
 
@@ -55,7 +55,7 @@
 /* 저자 정보 컨테이너 스타일 */
 .author_information {
     background-color: #f9f9f9; /* 배경색 설정 */
-    padding: 20px; /* 패딩 추가 */
+    padding: 25px; /* 패딩 추가 */
 }
 
 /* 저자 목록 스타일 */
@@ -91,7 +91,7 @@
 /* 학교이름 */
 .author_information p {
     font-family: 'Open Sans', sans-serif; /* 폰트 설정 */
-    font-size: 20px; /* 글자 크기 설정 */
+    font-size: 25px; /* 글자 크기 설정 */
     color: #000000; /* 글자 색상 설정 */
     margin: 20px; /* 기본 마진 제거 */
 }
@@ -117,4 +117,16 @@
 .authors a:hover {
     color: #ff0000; /* 호버 상태에서 글자 색상을 빨간색으로 변경 */
     transform: scale(1.2); /* 호버 상태에서 글자 크기를 확대 */
+}
+
+
+/* * 스타일 */
+.corresponding_author sup {
+    color: #fc0000; /* 상위 첨자(* 텍스트) 색상을 빨간색으로 설정 */
+    font-size: 30px; /* 상위 첨자(* 텍스트)의 글자 크기 설정 */
+}
+.corresponding_author {
+    color: #000000; /* "Corresponding author" 글자 색상을 빨간색으로 설정 */
+    font-size: 30px; /* 글자 크기 설정 */
+    text-align: center;
 }
