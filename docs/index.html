@@ -16,7 +16,7 @@
                 <li><a href="#abstract">Abstract</a></li>
                 <li><a href="#introduction">Introduction</a></li>
                 <li><a href="#method">Method</a></li>
-                <li><a href="#result">Result</a></li>
+                <li><a href="#results">Result</a></li>
                 <li><a href="#demo">Demo</a></li>
                 <li><a href="#paper">Paper</a></li>
                 <li><a href="#references">References</a></li>
@@ -68,10 +68,8 @@
             existing methods fluctuates depending on the dataset characteristics.
         </p>
     </section>
-
-
     <section id="introduction">
-        <h2>Introduction</h2>
+        <h1>Introduction</h1>
 
         <!-- 첫 번째 그림 및 내용 -->
         <!-- 그림 추가: 이미지 파일 경로를 src에 설정 -->
@@ -99,26 +97,58 @@
         </figure>
 
         <p>we show a high-level illustration of the proposed method. Our architecture employs two expert models - a
-            <span class="red-text">spatial</span> expert model and a <span class="blue-text">temporal </span>expert model - which exchange information to make a synergistic
+            <span class="red-text">spatial</span> expert model and a <span class="blue-text">temporal </span>expert
+            model - which exchange information to make a synergistic
             collective prediction.
             Initially, the experts may predict incorrect actions due to the lack of information. For example, the
             temporal expert may predict reach out to something while the ground truth is Pick up a fork. Similarly,
             the spatial expert may predict utensil holder instead of fork in the shallower layers. However, after
             using cross-attention to exchange information multiple times, the proposed method can collectively
-            predict the correct action Pick up a fork. Best viewed with zoom and color</p>
-
+            predict the correct action Pick up a fork. Best viewed with zoom and color
+        </p>
     </section>
     <section id="method">
-        <h2>Method</h2>
+        <h1>Method</h1>
 
         <!-- 첫 번째 그림 및 내용 -->
-        <p>첫 번째 그림에 대한 설명입니다. 이 섹션에서는 무엇을 보여주고 있는지에 대한 내용을 기술합니다.</p>
         <!-- 그림 추가: 이미지 파일 경로를 src에 설정 -->
-        <img src="figure/model.jpg" alt="model_figure" class="model">
-
+        <figure>
+            <img src="figure/model.jpg" alt="model_figure" class="model">
+            <figcaption><strong> Overview of CAST.</strong></figcaption>
+        </figure>
+        <p>We introduce CAST, a method for balanced spatio-temporal representation learning for action recognition, as
+            shown in Figure. We employ frozen spatial and temporal expert models that can be any
+            vision transformer, consisting of 12 transformer blocks each. To facilitate information exchange between the
+            experts, we introduce the bottleneck cross-attention in space and time (B-CAST) module on top of the frozen
+            layers. This module enables the experts to exchange information and learn more balanced spatio-temporal
+            contexts than separate experts. To improve adaptation to downstream tasks, we use adapter layers with a
+            small number of learnable parameters, following AIM<sup>[1]</sup>.</p>
     </section>
 
 
+    <section id="results">
+        <h1>Results</h1>
+        <figure>
+            <figcaption><strong> Comparison with the state-of-the-arts on the EPIC-Kitchens-100 dataset.</strong></figcaption>
+            <img src="table/EK100.png" alt="EK100" class="model">
+        </figure>
+        <figure>
+            <figcaption><strong> Comparison with the state-of-the-arts on the Kinetics400 dataset.</strong></figcaption>
+            <img src="table/K400.png" alt="K400" class="model">
+        </figure>
+        <figure>
+            <figcaption><strong> Comparison with the state-of-the-arts on the Something-Something-V2 dataset.</strong></figcaption>
+            <img src="table/SSV2.png" alt="SSV2" class="model">
+        </figure>
+    </section>
+
+    <section id="references">
+        <h1>References</h1>
+        <p>[1] Yang, Taojiannan, et al. "AIM: Adapting Image Models for Efficient Video Action Recognition." The Eleventh International Conference on Learning Representations. 2022.</p>
+    </section>
+
+
+    
 </body>
 
 </html>
