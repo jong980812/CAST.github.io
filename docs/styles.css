@@ -1,17 +1,23 @@
 /* 메뉴 바 스타일 */
 /* CSS for uniform h1 font size */
 h1 {
-    font-size: 40px; /* Define your desired font size here */
+    font-size: 40px;
+    /* Define your desired font size here */
 }
+
 .red-bar {
-    background-color: #751616; /* 짙은 빨간색 배경색을 설정합니다 */
-    color: #fff; /* 텍스트 색상을 흰색으로 설정합니다 */
-    padding: 10px; /* 위아래 패딩을 추가합니다 */
+    background-color: #751616;
+    /* 짙은 빨간색 배경색을 설정합니다 */
+    color: #fff;
+    /* 텍스트 색상을 흰색으로 설정합니다 */
+    padding: 10px;
+    /* 위아래 패딩을 추가합니다 */
 }
 
 /* 메뉴 목록 스타일 */
 .red-bar ul {
-    list-style: none; /* 목록 마커를 제거합니다 */
+    list-style: none;
+    /* 목록 마커를 제거합니다 */
     padding: 0;
 }
 
@@ -24,17 +30,21 @@ h1 {
     margin-right: 20px;
     background-color: #490a0a;
     padding: 20px 30px;
-    text-align: center; /* 텍스트 가운데 정렬 추가 */
+    text-align: center;
+    /* 텍스트 가운데 정렬 추가 */
 }
 
 /* 가운데 정렬을 위해 메뉴 바 높이를 조절 */
 .red-bar ul {
     list-style: none;
     padding: 20px;
-    height: 100%; /* 메뉴 바 높이 100%로 설정 */
+    height: 100%;
+    /* 메뉴 바 높이 100%로 설정 */
     display: flex;
-    justify-content: center; /* 텍스트를 수평 중앙에 정렬 */
-    align-items: center; /* 텍스트를 수직 중앙에 정렬 */
+    justify-content: center;
+    /* 텍스트를 수평 중앙에 정렬 */
+    align-items: center;
+    /* 텍스트를 수직 중앙에 정렬 */
 }
 
 /* 링크 스타일 */
@@ -46,99 +56,143 @@ h1 {
 /* 논문 제목 스타일 */
 /* 논문 제목 스타일 예제 */
 #paper h2 {
-    font-size: 50px; /* 글자 크기 설정 */
-    color: #000; /* 글자 색상 설정 */
-    text-align: center; /* 가운데 정렬 */
+    font-size: 50px;
+    /* 글자 크기 설정 */
+    color: #000;
+    /* 글자 색상 설정 */
+    text-align: center;
+    /* 가운데 정렬 */
     /* 다른 스타일 속성 추가 가능 */
     font-family: 'Open Sans', sans-serif;
     background-color: #f9f9f9;
-    padding: 20px; /* 패딩 추가 */
+    padding: 20px;
+    /* 패딩 추가 */
 
 }
 
 /* 저자 정보 컨테이너 스타일 */
 .author_information {
-    background-color: #f9f9f9; /* 배경색 설정 */
-    padding: 25px; /* 패딩 추가 */
+    background-color: #f9f9f9;
+    /* 배경색 설정 */
+    padding: 25px;
+    /* 패딩 추가 */
 }
 
 /* 저자 목록 스타일 */
 .authors {
-    font-family: 'Open Sans', sans-serif; /* 폰트 설정 */
-    font-size: 16px; /* 글자 크기 설정 */
-    margin: 0; /* 기본 마진 제거 */
+    font-family: 'Open Sans', sans-serif;
+    /* 폰트 설정 */
+    font-size: 16px;
+    /* 글자 크기 설정 */
+    margin: 0;
+    /* 기본 마진 제거 */
     text-align: center;
 }
 
 
 /* 이름 위에 밑줄 스타일 설정 */
 .authors a:before {
-    content: ''; /* 가상 요소의 내용은 없음 */
-    position: absolute; /* 절대 위치 설정 */
-    width: 100%; /* 너비를 100%로 설정하여 텍스트 아래로 확장 */
-    height: 1px; /* 밑줄 높이 설정 */
-    background-color: #333; /* 밑줄 색상 설정 */
-    bottom: 0; /* 텍스트 아래에 위치 */
-    left: 0; /* 왼쪽 정렬 */
-    transform: scaleX(0); /* 초기에 밑줄을 숨김 */
-    transition: transform 0.3s; /* 변환 효과 지속 시간 설정 */
-    
+    content: '';
+    /* 가상 요소의 내용은 없음 */
+    position: absolute;
+    /* 절대 위치 설정 */
+    width: 100%;
+    /* 너비를 100%로 설정하여 텍스트 아래로 확장 */
+    height: 1px;
+    /* 밑줄 높이 설정 */
+    background-color: #333;
+    /* 밑줄 색상 설정 */
+    bottom: 0;
+    /* 텍스트 아래에 위치 */
+    left: 0;
+    /* 왼쪽 정렬 */
+    transform: scaleX(0);
+    /* 초기에 밑줄을 숨김 */
+    transition: transform 0.3s;
+    /* 변환 효과 지속 시간 설정 */
+
 }
+
 .authors a:hover:before {
-    transform: scaleX(1); /* 밑줄을 나타나게 함 */
-    transform-origin: center; /* 중앙에서 시작 */
-    background-color: #fc0000; /* 밑줄 색상 변경 */
+    transform: scaleX(1);
+    /* 밑줄을 나타나게 함 */
+    transform-origin: center;
+    /* 중앙에서 시작 */
+    background-color: #fc0000;
+    /* 밑줄 색상 변경 */
 }
 
 /* 마우스 호버 효과: 밑줄 나타남 */
 
 /* 학교이름 */
 .author_information p {
-    font-family: 'Open Sans', sans-serif; /* 폰트 설정 */
-    font-size: 25px; /* 글자 크기 설정 */
-    color: #000000; /* 글자 색상 설정 */
-    margin: 20px; /* 기본 마진 제거 */
+    font-family: 'Open Sans', sans-serif;
+    /* 폰트 설정 */
+    font-size: 25px;
+    /* 글자 크기 설정 */
+    color: #000000;
+    /* 글자 색상 설정 */
+    margin: 20px;
+    /* 기본 마진 제거 */
 }
 
 /* 각 저자 이름 사이에 수표 스타일 */
 .authors a sup {
-    font-size: 20px; /* 글자 크기 설정 */
-    color: #fc0000; /* 빨간색으로 설정 */
+    font-size: 20px;
+    /* 글자 크기 설정 */
+    color: #fc0000;
+    /* 빨간색으로 설정 */
 }
+
 /* 이름에 호버 효과 스타일 */
 .authors a {
-    text-decoration: none; /* 링크 밑줄 제거 */
-    color: #8a4230; /* 기본 글자 색상 */
-    position: relative; /* 상대 위치 설정 */
-    transition: color 0.5s, transform 0.5s; /* 색상과 변형에 대한 전환 효과 추가 */
-    
+    text-decoration: none;
+    /* 링크 밑줄 제거 */
+    color: #8a4230;
+    /* 기본 글자 색상 */
+    position: relative;
+    /* 상대 위치 설정 */
+    transition: color 0.5s, transform 0.5s;
+    /* 색상과 변형에 대한 전환 효과 추가 */
+
 }
+
 .authors a {
-    color: #333; /* 글자 색상 설정 */
-    position: relative; /* 상대 위치 설정 */
+    color: #333;
+    /* 글자 색상 설정 */
+    position: relative;
+    /* 상대 위치 설정 */
 }
 
 .authors a:hover {
-    color: #ff0000; /* 호버 상태에서 글자 색상을 빨간색으로 변경 */
-    transform: scale(1.2); /* 호버 상태에서 글자 크기를 확대 */
+    color: #ff0000;
+    /* 호버 상태에서 글자 색상을 빨간색으로 변경 */
+    transform: scale(1.2);
+    /* 호버 상태에서 글자 크기를 확대 */
 }
 
 
 /* * 스타일 */
 #corresponding sup {
-    color: #fc0000; /* 상위 첨자(* 텍스트) 색상을 빨간색으로 설정 */
-    font-size: 10px; /* 상위 첨자(* 텍스트)의 글자 크기 설정 */
+    color: #fc0000;
+    /* 상위 첨자(* 텍스트) 색상을 빨간색으로 설정 */
+    font-size: 10px;
+    /* 상위 첨자(* 텍스트)의 글자 크기 설정 */
 }
+
 #corresponding {
-    color: #000000; /* "Corresponding author" 글자 색상을 빨간색으로 설정 */
-    font-size: 15px; /* 글자 크기 설정 */
+    color: #000000;
+    /* "Corresponding author" 글자 색상을 빨간색으로 설정 */
+    font-size: 15px;
+    /* 글자 크기 설정 */
     text-align: center;
 }
+
 #abstract {
     margin-top: 10px;
     padding: 20px;
     font-size: 25px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -147,20 +201,20 @@ h1 {
     margin-top: 10px;
     padding: 20px;
     font-size: 25px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#introduction figure figcaption{
+#introduction figure figcaption {
     margin-top: 30px;
     font-size: 25px;
     text-align: center;
 }
-.introduction{
+.introduction {
     width: 1000px;
     height: auto;
     display: block;
     margin: 0 auto;
 }
-.motivation{
+.motivation {
     width: 1000px;
     height: auto;
     display: block;
@@ -171,9 +225,9 @@ h1 {
     margin-top: 10px;
     padding: 20px;
     font-size: 25px;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#method figure figcaption{
+#method figure figcaption {
     margin-top: 30px;
     font-size: 25px;
     text-align: center;
@@ -185,21 +239,20 @@ h1 {
     margin-top: 100px;
     margin: 0 auto;
 }
-#results figure figcaption{
+
+#results figure figcaption {
     margin-bottom: 20px;
     font-size: 30px;
     font-style: italic;
     text-align: center;
 }
-#results figure{
+#results figure {
     margin-bottom: 150px;
 }
-
 #results figure img {
-    border: 4px solid #1d8d28; /* Add a blue border around the images */
+    border: 4px solid #1d8d28;
+    /* Add a blue border around the images */
 }
-
-
 .red-text {
     color: red;
     font-weight: bold;
@@ -216,15 +269,11 @@ h1 {
     margin: 20px;
     border-radius: 5px;
 }
-
 #references h1 {
     font-size: 40px;
     color: #333;
 }
-
 #references p {
     font-size: 16px;
     color: #666;
 }
-
-
