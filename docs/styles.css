@@ -10,10 +10,10 @@ h1 {
     /* 짙은 빨간색 배경색을 설정합니다 */
     color: #fff;
     /* 텍스트 색상을 흰색으로 설정합니다 */
-    padding: 5px;
     position: fixed;
     width: 100%;
     /* 위아래 패딩을 추가합니다 */
+    padding-left: 100px;
 }
 
 /* 메뉴 목록 스타일 */
@@ -29,7 +29,7 @@ h1 {
     font-family: 'Open Sans', sans-serif;
 
     font-size: 25px;
-    margin-right: 20px;
+    margin-right: 10px;
     background-color: #490a0a;
     padding: 20px 20px;
     text-align: center;
@@ -39,11 +39,10 @@ h1 {
 /* 가운데 정렬을 위해 메뉴 바 높이를 조절 */
 .red-bar ul {
     list-style: none;
-    padding: 5px;
+    padding: 15px;
     height: 100%;
     /* 메뉴 바 높이 100%로 설정 */
     display: flex;
-    justify-content: center;
     /* 텍스트를 수평 중앙에 정렬 */
     align-items: center;
     /* 텍스트를 수직 중앙에 정렬 */
@@ -202,7 +201,6 @@ h1 {
 /*figure*/
 #introduction {
     margin-top: 10px;
-    padding: 20px;
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -212,13 +210,16 @@ h1 {
     text-align: center;
 }
 .introduction {
-    width: 1000px;
+    /* width: 1000px; */
+    max-width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto;
+
+    /* margin-left: -100px; */
+
 }
 .motivation {
-    width: 1000px;
+    max-width: 100%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -236,7 +237,7 @@ h1 {
     text-align: center;
 }
 .model {
-    width: 1000px;
+    max-width: 100%;
     height: auto;
     display: block;
     margin-top: 100px;
