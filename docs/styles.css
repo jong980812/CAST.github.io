@@ -13,7 +13,8 @@ h1 {
     position: fixed;
     width: 100%;
     /* 위아래 패딩을 추가합니다 */
-    padding-left: 100px;
+    padding-left: 200px;
+    margin-top: -10px;
 }
 
 /* 메뉴 목록 스타일 */
@@ -27,8 +28,8 @@ h1 {
 .red-bar ul li {
     display: inline;
     font-family: 'Open Sans', sans-serif;
-
-    font-size: 25px;
+    
+    font-size: 18px;
     margin-right: 10px;
     background-color: #490a0a;
     padding: 20px 20px;
@@ -39,7 +40,7 @@ h1 {
 /* 가운데 정렬을 위해 메뉴 바 높이를 조절 */
 .red-bar ul {
     list-style: none;
-    padding: 15px;
+    padding: 10px;
     height: 100%;
     /* 메뉴 바 높이 100%로 설정 */
     display: flex;
