@@ -5,6 +5,8 @@
     <title>Your Research Paper</title>
     <link rel="stylesheet" type="text/css" href="styles.css"> <!-- CSS 파일을 연결합니다 -->
     <meta name="author" content="Taojiannan Yang, Yi Zhu, Yusheng Xie, Aston Zhang, Chen Chen, Mu Li">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -19,9 +21,9 @@
                 <li><a href="#method">Method</a></li>
                 <li><a href="#results">Result</a></li>
                 <li><a href="#demo">Demo</a></li>
-                <li><a href="#paper">Paper</a></li>
-                <li><a href="#references">References</a></li>
+                <li><a href="#links">Links</a></li>
                 <li><a href="#citation">Citation</a></li>
+                <li><a href="#references">References</a></li>
             </ul>
         </nav>
     </header>
@@ -34,7 +36,9 @@
             <h2>CAST:<br>Cross-Attention in Space and Time<br>for Video Action Recognition</h2>
             <!-- 논문 내용을 이어서 작성합니다 -->
         </section>
-
+        <section id="conference">
+            <h3>In Neural Information Processing Systems (NeurIPS), 2023</h3>
+        </section>
         <p class="authors">
             <a href="" id="dongho">Dongho Lee<sup>†</sup></a>,
             <a href="https://github.com/jong980812" id="jongseo">Jongseo Lee<sup>†</sup></a>,
@@ -46,7 +50,8 @@
         </p>
 
         <section id="corresponding">
-            <sup>*</sup>Corresponding author
+            <sup>*</sup>Corresponding author<br>
+            <sup style="color: black;">†</sup>Equally contributed
             <!-- 논문 내용을 이어서 작성합니다 -->
         </section>
     </div>
@@ -143,11 +148,40 @@
         </figure>
     </section>
 
+    <section id="links">
+        <h1>Links</h1>
+        <ul>
+            <li><a href="https://github.com/potatowarriors/CAST"><i class="fa fa-github"></i> GitHub</a></li>
+            <li><a href="https://vll.khu.ac.kr/"><i class="fa fa-globe"></i> Lab homepage</a></li>
+            <li>
+                <i class="fa fa-book"></i> Paper download
+                <ul>
+                    <li><a href="#"><i class="fa fa-download"></i> Neruips version</a></li>
+                    <li><a href="#"><i class="fa fa-download"></i> Arxiv version</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+    
+    
+  <section id="citation">
+    <h1>Citation</h1>
+    <p style="font-family: monospace; font-size: 1em; white-space: pre;">
+        @article{cast,
+        &emsp; title={CAST: Cross-Attention in Space and Time for Video Action Recognition},
+        &emsp; author={Lee, Dongho and Lee, Jongseo and Choi, Jinwoo},
+        &emsp; booktitle={NeurIPS},
+        &emsp; year={2023}
+        }
+    </p>
+</section>
+
     <section id="references">
         <h1>References</h1>
         <p>[1] Yang, Taojiannan, et al. "AIM: Adapting Image Models for Efficient Video Action Recognition." The Eleventh International Conference on Learning Representations. 2022.</p>
     </section>
 
+    
 
     
 </body>

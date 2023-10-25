@@ -183,14 +183,14 @@ sup {
 #corresponding sup {
     color: #fc0000;
     /* 상위 첨자(* 텍스트) 색상을 빨간색으로 설정 */
-    font-size: 10px;
+    font-size: 14px;
     /* 상위 첨자(* 텍스트)의 글자 크기 설정 */
 }
 
 #corresponding {
     color: #000000;
     /* "Corresponding author" 글자 색상을 빨간색으로 설정 */
-    font-size: 15px;
+    font-size: 8px;
     /* 글자 크기 설정 */
     text-align: center;
 }
@@ -272,6 +272,8 @@ sup {
 #abstract, #introduction, #method, #results, #references {
     /* padding-left: 800px;
     padding-right: 800px; */
+    padding-top: 60px; /* 메뉴 바의 높이에 맞게 조절 */
+    margin-top: -60px; /* 음수값으로 위로 이동 */
     margin: 0 auto;
     max-width: 60%;
     text-align: justify;
@@ -290,14 +292,91 @@ sup {
     color: blue;
     font-weight: bold;
 }
-#references {
+/* Font Awesome 아이콘 라이브러리 설정 */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+
+/* Links 섹션 스타일 */
+#links {
     background-color: #f9f9f9;
     padding: 20px;
+    max-width: 70%;
+    margin: 20px auto;
     border: 1px solid #6e1d1d;
-    margin: 20px;
+    border-radius: 5px;
+    text-align: left;
+    margin-bottom: 200px;
+}
+
+#links h1 {
+    margin-top: -5px;
+
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#links ul {
+    list-style: none;
+    padding: 0;
+}
+
+#links li{
+    font-size: 20px;
+    padding-top: 10px;
+}
+#links li li {
+    padding-left: 30px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+#links a:hover {
+    color: #fc0000;
+}
+#links i{
+    font-size: 30px;
+}
+
+#citation {
+    background-color: #f9f9f9;
+    max-width: 70%;
+    padding: 20px;
+    border: 1px solid #6e1d1d;
+    margin: 40px auto;
+    margin-bottom: 200px;
+    border-radius: 5px;
+}
+#citation h1 {
+    margin-top: -5px;
+
+    font-size: 40px;
+    color: #333;
+}
+#citation p {
+    margin-top: -30px;
+
+    /* font-size: 16px; */
+    color: #000000;
+}
+
+
+#references {
+    background-color: #f9f9f9;
+    max-width: 70%;
+    margin-bottom: 200px;
+    padding: 20px;
+    border: 1px solid #6e1d1d;
+    margin: 20px auto;
     border-radius: 5px;
 }
 #references h1 {
+    margin-top: -5px;
     font-size: 40px;
     color: #333;
 }
@@ -305,3 +384,12 @@ sup {
     font-size: 16px;
     color: #666;
 }
+
+#conference h3 {
+    margin-top: -50px;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
