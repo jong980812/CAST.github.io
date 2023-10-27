@@ -24,6 +24,9 @@
                 <li><a href="#links">Links</a></li>
                 <li><a href="#citation">Citation</a></li>
                 <li><a href="#references">References</a></li>
+                <!-- <figure>
+                    <img src="figure/LOGO.png" alt="introduction_figure" class="introduction">
+                </figure> -->
             </ul>
         </nav>
     </header>
@@ -40,13 +43,14 @@
             <h3>In Neural Information Processing Systems (NeurIPS), 2023</h3>
         </section>
         <p class="authors">
-            <a href="" id="dongho">Dongho Lee<sup>†</sup></a>,
+            <a href="https://github.com/potatowarriors/" id="dongho">Dongho Lee<sup>†</sup></a>,
             <a href="https://github.com/jong980812" id="jongseo">Jongseo Lee<sup>†</sup></a>,
             <a href="https://sites.google.com/site/jchoivision/" id="jinwoo">Jinwoo Choi<sup>*</sup></a>,
 
         </p>
         <p class="authors">
-            <a href="https://www.khu.ac.kr/eng/main/index.do">Kyung Hee University<sup></sup></a>
+            <a href="https://www.khu.ac.kr/eng/main/index.do">Kyung Hee University <sup></sup></a>
+            
         </p>
 
         <section id="corresponding">
@@ -54,8 +58,16 @@
             <sup style="color: black;">†</sup>Equally contributed
             <!-- 논문 내용을 이어서 작성합니다 -->
         </section>
+
     </div>
+
     <!-- Abstract 문단 추가 -->
+    <section id="Home_link">
+        <ul>
+            <a href="https://github.com/khuvll/CAST"><i class="fa fa-github"></i> GitHub</a>
+            <a href="https://vll.khu.ac.kr/"><i class="fa fa-globe"></i> Lab homepage</a>
+        </ul>
+    </section>
     <section id="abstract">
         <h1>Abstract</h1>
         <p>Recognizing human actions in videos requires spatial and temporal understanding.
@@ -134,6 +146,7 @@
 
     <section id="results">
         <h1>Results</h1>
+
         <figure>
             <figcaption><strong> Comparison with the state-of-the-arts on the EPIC-Kitchens-100 dataset.</strong></figcaption>
             <img src="table/EK100.png" alt="EK100" class="model">
@@ -146,9 +159,14 @@
             <figcaption><strong> Comparison with the state-of-the-arts on the Something-Something-V2 dataset.</strong></figcaption>
             <img src="table/SSV2.png" alt="SSV2" class="model">
         </figure>
+        <figure>
+            <figcaption><strong>Qualitative examples from EK100 comparing CLIP, VideoMAE, and the proposed
+                CAST.</strong></figcaption>
+            <img src="figure/failure.jpg" alt="failure" class="failure">
+        </figure>
     </section>
 
-    <section id="links">
+    <!-- <section id="links">
         <h1>Links</h1>
         <ul>
             <li><a href="https://github.com/khuvll/CAST"><i class="fa fa-github"></i> GitHub</a></li>
@@ -161,7 +179,7 @@
                 </ul>
             </li>
         </ul>
-    </section>
+    </section> -->
     
     
   <section id="citation">
