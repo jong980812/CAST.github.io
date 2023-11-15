@@ -245,7 +245,7 @@ sup {
 #method figure figcaption {
     margin-top: 0px;
     margin-bottom: 40px;
-
+    max-width: 100%;
     font-size:30px;
     text-align: center;
 }
@@ -442,4 +442,26 @@ sup {
 #Home_link a:hover {
     background-color: #993030; /* 호버 상태에서 배경 색상 변경 */
     color: #fff; /* 호버 상태에서 텍스트 색상 변경 */
+}
+
+#download {
+    background-color: #f9f9f9;
+    max-width: 70%;
+    padding: 20px;
+    border: 1px solid #6e1d1d;
+    margin: 40px auto;
+    margin-bottom: 200px;
+    border-radius: 5px;
+}
+#download h1 {
+    margin-top: -5px;
+
+    font-size: 40px;
+    color: #333;
+}
+#download p {
+    margin-top: -30px;
+
+    /* font-size: 16px; */
+    color: #000000;
 }
